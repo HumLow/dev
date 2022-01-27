@@ -1,0 +1,25 @@
+<section id="homepage-feed">
+	<h1>
+		Blog Posts
+	</h1>
+
+	{% for post in site.posts %}
+	<article>
+		<header>
+			<h2>{{ post.title }}</h2>
+			<time datetime="{{ post.date }}">
+				{{ post.date | date: "%d %B %Y" }}
+			</time>
+			by {{ post.author }}
+		</header>
+		<main>
+			{{ post.content }}
+		</main>
+		<footer>
+			<a href="{{ post.url }}">
+				Go to post
+			</a>
+		</footer>
+	</article>
+	{% endfor %}
+</section>

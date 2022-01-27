@@ -3,14 +3,6 @@
 
 @import "{{ site.theme }}";
 
-header {
-	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, serif;
-
-	h1 {
-		width: auto;
-	}
-}
-
 aside#sidebar {
 	.latest-posts {
 		h3 {
@@ -32,4 +24,22 @@ aside#sidebar {
 		margin-top: 1.5rem;
 		margin-bottom: 1.5rem;
 	}		
+}
+
+#homepage-feed {
+	h1 {
+		padding-bottom: 1rem;
+	}
+	
+	article {
+		padding: 0.5rem 1.5rem;
+		background: #eee;
+		header {
+			padding-top: 1rem; padding-bottom: 1rem;
+		}
+		footer {
+			padding-top: 0.5rem; padding-bottom: 1rem;
+			margin-top: 0;
+		}
+	}
 }
